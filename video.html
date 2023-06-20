@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home Page</title>
+<!-- Enter Engage Web Tracking Code Below -->
+<!-- Engage Web Tracking Code -->
+
+
+<!-- Please insert the following code between your HTML document head tags to maintain a common reference to a unique visitor across one or more external web tracked sites. -->
+<meta name="com.silverpop.brandeddomains" content="www.pages05.net,hurgsa.ibm.com" />
+
+
+<!-- Optionally uncomment the following code between your HTML document head tags if you use Engage Conversion Tracking (COT). -->
+<!--<meta name="com.silverpop.cothost" content="pod5.ibmmarketingcloud.com" />-->
+
+
+<script src="http://contentz.mkt51.net/lp/static/js/iMAWebCookie.js?15f1192d-1320682eea6-c6f842ded9e6d11c5ffebd715e129037&h=www.pages05.net" type="text/javascript"></script>
+
+
+<!-- For external web sites running under SSL protocol (https://) please uncomment this block and comment out the non-secure (http://) implementation. -->
+<!--<script src="https://www.sc.pages05.net/lp/static/js/iMAWebCookie.js?15f1192d-1320682eea6-c6f842ded9e6d11c5ffebd715e129037&h=www.pages05.net" type="text/javascript"></script>-->
+<!-- Enter Engage Web Tracking Code Below -->
+</head>
+
+<body>
+<div id="player"></div>
+<script>
+    //Load player api asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var done = false;
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '315',
+          width: '560',
+          videoId: 'bHQqvYy5KYo',
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+	 }
+	 //startedonce sets to true the first time the player state changes and fires the tracking code.
+   var startedonce = false;
+function onPlayerStateChange(event) {
+        if (event.data != YT.PlayerState.UNSTARTED && !startedonce) {
+          startedonce = true;
+          ewt.track({name:'Video',type:'000custom_media'});
+
+  }
+ }
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Testing Other Events</title>
+<!-- Enter Engage Web Tracking Code Below -->
+<!-- Engage Web Tracking Code -->
+
+
+<!-- Please insert the following code between your HTML document head tags to maintain a common reference to a unique visitor across one or more external web tracked sites. -->
+<meta name="com.silverpop.brandeddomains" content="www.pages05.net,hurgsa.ibm.com" />
+
+
+<!-- Optionally uncomment the following code between your HTML document head tags if you use Engage Conversion Tracking (COT). -->
+<!--<meta name="com.silverpop.cothost" content="pod5.ibmmarketingcloud.com" />-->
+
+
+<script src="http://contentz.mkt51.net/lp/static/js/iMAWebCookie.js?15f1192d-1320682eea6-c6f842ded9e6d11c5ffebd715e129037&h=www.pages05.net" type="text/javascript"></script>
+
+
+<!-- For external web sites running under SSL protocol (https://) please uncomment this block and comment out the non-secure (http://) implementation. -->
+<!--<script src="https://www.sc.pages05.net/lp/static/js/iMAWebCookie.js?15f1192d-1320682eea6-c6f842ded9e6d11c5ffebd715e129037&h=www.pages05.net" type="text/javascript"></script>-->
+<!-- End of Engage Web Tracking Code -->
+<style>
+h1 {text-align:center; font-family:Arial, Helvetica, sans-serif;}
+p {text-align:center; font-family:Arial, Helvetica, sans-serif;}
+</style>
+
+</head>
+
+<body>
+
+<table width="100%" border="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td width="50%"><h1>Here you can test other event types</h1></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><p><a href="Confirmation.html" onClick="return ewt.trackLink({name:'Event - Custom Event',type:'000custom_event',link:this }); return false">Custom Event &gt;&gt;</a></p>
+<!--<p><a href="Confirmation.html" onClick="return ewt.trackFormSubmit({name:'Event - Form Submit',type:'000custom_form'});">Form Submission &gt;&gt;<br />
+  
+</a>(not working as needs to be in the form tag and use onSubmit action)</p>-->
+<p><a href="http://www.pages05.net/demo-elwynevans/assets/LPT.url?kn=2633108&vs=NWVlMTRjNmItNTE1MC00YmY1LTg4OTctMDQ5ZjI1NWEwNjVlOzsS1" onClick="return ewt.trackLink({name:'Event - Download',type:'download',link:this });">File Download &gt;&gt;</a></p>
+<p><a href="https://youtu.be/C1qYBzJ1MIQ" onClick="return ewt.trackLink({name:'Event - Media Play',type:'multimedia',link:this });">Media Play &gt;&gt;</a></p>
+<p><a href="http://www.pages05.net/demo-elwynevans/assets/LPT.url?kn=2633107&vs=NWVlMTRjNmItNTE1MC00YmY1LTg4OTctMDQ5ZjI1NWEwNjVlOzsS1" onClick="ewt.trackLink({name:'Event - Download 1',type:'000download_1',link:this}); return ewt.trackLink({name:'Event - Download 2';,type:'000download_2',link:this});">Double event Trigger &gt;&gt;</a></p></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
